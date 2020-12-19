@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+    color: #323235;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 1;
+    min-width: 1280px;
+}
+
+.header-nav {
+    width: 1200px;
+    height: 84px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.logo {
+    width: 200px;
+    height: 54px;
+    background: url(../images/logo.png) no-repeat;
+    position: absolute;
+    text-indent: -999px;
+    z-index: 100;
+    top: 15px;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-nav {
+    width: 790px;
+    padding-left: 230px;
+    height: 84px;
+}
+
+.header-nav .main-nav li {
+    float: left;
+    width: 110px;
+    height: 84px;
+    text-align: center;
+}
+
+.header-nav .main-nav li:hover,
+.header-nav .main-nav li:hover a {
+    background: url(../images/spr_block.png);
+    color: #e4b653;
+}
+
+.main-nav a {
+    width: 110px;
+    height: 64px;
+    color: #c9c9dd;
+    font-size: 18px;
+    padding: 20px 0 0 0;
+    display: block;
+    line-height: 30px;
+}
+
+.main-nav span {
+    display: block;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #858792;
+}
+
+.logo-sign {
+    width: 182px;
+    position: absolute;
+    top: 21px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.logo-sign img {
+    float: left;
+    margin-right: 7px;
+}
+
+.logo-sign img {
+    border: 1px solid #d9ad50;
+    border-radius: 42px;
+}
+
+.unlogin {
+    display: inline-block;
+    width: 130px;
+    color: #858792;
+}
+
+.welcome {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.header:hover .header-scnav {
+    height: 285px;
+}
+
+.header-scnav {
+    clear: both;
+    background: rgb(0, 0, 0, 0.7);
+    z-index: 3;
+    transition: all .3s ease;
+    overflow: hidden;
+    height: 0px;
+}
+
+
+.header-scnav ul {
+    width: 970px;
+    height: 240px;
+    margin: 0 auto;
+    padding: 15px 0 30px 230px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.header-scnav li {
+    float: left;
+    display: block;
+    width: 100px;
+    padding: 2px 5px 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.header-scnav li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #c9c9dd;
+}
+
+.header-scnav li a:hover {
+    text-decoration: underline;
+    color: #e4b653;
+}
+
+.header-scnav .icon-fans {
+    background: url(../images/spr_block.png) no-repeat;
+    background-position: -137px -68px;
+    overflow: hidden;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.header-scnav .icon-hot {
+    background: url(../images/spr_block.png) no-repeat;
+    background-position: -163px -68px;
+    padding-right: 2px;
+    display: inline-block;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.header-scnav .icon-guard {
+    background: url(../images/spr_block.png) no-repeat;
+    background-position: -136px -5px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.header-scnav .icon-health {
+    background: url(../images/spr_block.png) no-repeat;
+    background-position: -137px -36px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.main {
+    min-width: 1280px;
+    min-height: 906px;
+    background: url(../images/bg.jpg) no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.detail {
+    display: block;
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 6px;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 342px;
+    margin: 0 auto;
+    background: url(../images/rotate_bg.png) no-repeat;
+    color: #b1b2be;
+}
+
+.showFocus {
+    float: left;
+    width: 604px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.showFocus .showFocus-img {
+    width: 500%;
+    height: 298px;
+    transition: margin-left 0.3s;
+}
+
+.showFocus-img li {
+    float: left;
+    width: 604px;
+    height: 298px;
+}
+
+.showFocus-img li a,
+.showFocus-img li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.showFocus-title {
+    height: 44px;
+}
+
+.showFocus-title li {
+    float: left;
+    width: 20%;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+
+.showFocus-title .active {
+    color: #f3c258;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.showNews {
+    float: left;
+    width: 325px;
+    height: 342px;
+    padding: 0 17px;
+}
+
+.title-container {
+    height: 49px;
+    border-bottom: 1px solid #000;
+}
+
+.title-container li {
+    float: left;
+    width: 52px;
+    line-height: 49px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.title-container .active {
+    border-bottom: 3px solid #f3c258;
+    color: #f3c258;
+}
+
+.news-banner {
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.news-blocks {
+    width: 500%;
+    transition: margin-left 0.3s;
+}
+
+.news-blocks .newslist {
+    float: left;
+    width: 325px;
+}
+
+.news-blocks .newslist li {
+    margin-bottom: 11px;
+    overflow: hidden;
+}
+
+.news-blocks .newslist li span {
+    float: right;
+}
+
+.news-blocks .newslist li:first-child a {
+    display: block;
+    width: 100%;
+}
+
+.news-blocks .newslist li a {
+    float: left;
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-blocks .newslist li:first-child {
+    width: 294px;
+    height: 36px;
+    padding: 0 15px;
+    margin-top: 18px;
+    text-align: center;
+    line-height: 36px;
+    color: #f3c258;
+    font-size: 18px;
+    background: #414046;
+}
+
+.download-area {
+    float: right;
+    width: 236px;
+    height: 100%;
+}
+
+.download-area .download {
+    display: block;
+    width: 236px;
+    height: 128px;
+    background: url(../images/spr_block.png);
+    background-position: 0 -219px;
+}
+
+.download-area .vs {
+    display: block;
+    width: 236px;
+    height: 106px;
+    background: url(../images/spr_block.png);
+    background-position: 0 -350px;
+}
+
+.download-area .exp {
+    display: block;
+    width: 236px;
+    height: 108px;
+    background: url(../images/spr_block.png);
+    background-position: 0 -461px;
+}
+
+.adv {
+    width: 1200px;
+    height: 134px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+
+.adv a {
+    float: left;
+    width: 291px;
+    height: 134px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.adv a:last-child {
+    margin-right: 0;
+}
+
+.adv img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.adv img:hover {
+    transform: scale(1.1);
+}
+
+.footer{
+    height: 282px;
+    padding-top: 80px;
+    background: url(../images/bg_footer.jpg);
+
+}
+
+.tencent{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo{
+    border-bottom: 2px solid #d4d4d4;
+}
+
+.tencent .footer-logo a{
+    display: block;
+    width: 285px;
+    height: 64px;
+    margin-bottom: 10px;
+    background: url(../images/spr.png);
+}
+
+.footer-links{
+    margin-top: 12px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.footer-left-links{
+    float: left;
+    width: 525px;
+}
+
+.footer-left-links p{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-left-links p span{
+    margin-right: 12px;
+}
+
+.footer-right-links{
+    float: right;
+    width: 630px;
+}
+
+
+.footer-right-links p{
+    margin-top: 12px;
+}
+
+.loginScreen{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.login{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 530px;
+    height: 254px;
+    margin-left: -265px;
+    margin-top: -127px;
+    background: url(../images/loginform.jpg);
+}
+
+.loginScreen .login a{
+    position: absolute;
+}
+
+.weixin{
+    left: 60px;
+    top: 143px;
+    width: 197px;
+    height: 46px;
+}
+
+.qq{
+    left: 272px;
+    top: 143px;
+    width: 197px;
+    height: 46px;
+}
+
+.close{
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.right-nav{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+    width: 254px;
+    height: 494px;
+    margin-top: -247px;
+    background: url(../images/r_navBg.png);
+}
+
+.hero{
+    position: absolute;
+    top: 15px;
+    left: 24px;
+    width: 165px;
+    height: 145px;
+    background: url(../images/r_dj.png);
+}
+
+.hero a{
+    position: absolute;
+    top: 37px;
+    left: 12px;
+    width: 88px;
+    font-weight: bold;
+    color: #62401b;
+}
+
+.menus{
+    position: absolute;
+    top: 160px;
+    left: 85px;
+    width: 117px;
+}
+
+.menus li{
+    position: relative;
+    overflow: hidden;
+}
+
+.menus li:first-child img{
+    display: block;
+    width: 117px;
+    height: 117px;
+    border: 3px solid #f3c258;
+    box-sizing: border-box;
+}
+
+.menus li .weibo{
+    display: block;
+    width: 117px;
+    height: 38px;
+    background: url(../images/spr2.png) no-repeat -122px -120px;
+}
+
+.menus li .weixin{
+    display: block;
+    width: 117px;
+    height: 38px;
+    background: url(../images/spr2.png) no-repeat -122px -160px;
+}
+
+.menus li .sub-menu{
+    position: absolute;
+    width: 115px;
+    height: 144px;
+    left: -115px;
+    top: -66px;
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 12px;
+    padding-top: 8px;
+    background: url(../images/spr2.png) no-repeat 0 -416px;
+}
+
+.menus li .sub-menu img{
+    width: 100px;
+}
+
+.menus li .sub-menu span{
+    color: #cd974c;
+}
+
+.menus li:hover{
+    overflow: visible;
+}
+
+.menus li .master{
+    display: block;
+    width: 117px;
+    height: 38px;
+    background: url(../images/spr2.png) no-repeat -122px -417px;
+}
+
+.menus li .weibo:hover{
+    background-position: -122px -240px;
+}
+
+.menus li .weixin:hover{
+    background-position: -122px -200px;
+}
+
+.menus li .master:hover{
+    background-position: -122px -458px;
+}
